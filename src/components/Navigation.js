@@ -11,6 +11,11 @@ const Navigation = () =>
         </Link>
       </li>
       <li>
+        <Link to={ routes.SIGN_UP }>
+          Sign up
+        </Link>
+      </li>
+      <li>
         <Link to={ routes.LANDING }>
           Landing
         </Link>
