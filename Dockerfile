@@ -6,6 +6,10 @@ RUN npm install -g create-react-app \
                    react-native-cli
 RUN mkdir /todo
 WORKDIR /todo
-ADD . /todo
+COPY ./todo/package.json ./todo/
+RUN npm install --silent
+ADD ./todo ./todo
+EXPOSE 3001
+CMD yarn start
 
 # https://github.com/facebookincubator/create-react-app/issues/3002

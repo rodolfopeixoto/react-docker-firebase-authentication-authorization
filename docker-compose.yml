@@ -6,3 +6,5 @@ services:
     container_name: react-cli
     volumes:
       - .:/todo
+    ports:
+      - "3001:3001"
