@@ -4,6 +4,8 @@ services:
     build: .
     image: react-cli
     container_name: react-cli
+    env_file:
+      - dev.env
     volumes:
       - .:/todo
     ports:
